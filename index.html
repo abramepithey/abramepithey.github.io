@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-sm navbar-light bg-light" id="navbar">
+    <a class="navbar-brand" href="#">Abram Pithey</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Other Link</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- landing page -->
+<div class="container p-6" id="landing">
+
+</div>
+
+<!-- about section -->
+<div class="container mb-2 p-6" id="about">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus dicta voluptatibus velit, dolores temporibus iure officiis, numquam placeat, iusto cumque tempora nam voluptate? Suscipit laboriosam laudantium laborum tempore harum officia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ex voluptatum totam a voluptatibus aliquam hic natus assumenda, sed, minima earum dolor? Labore, cum. Recusandae ipsam officia at ut dolorum.</p>
+</div>
+
+<!-- projects section -->
+<div class="row row-cols-sm-2 row-cols-1 p-6 m-6" id="projects">
+    <div class="col mb-4">
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Project Name</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col mb-4">
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Project Name</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col mb-4">
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Project Name</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col mb-4">
+        <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Project Name</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- delete later -->
+<div class="container p-6 m-6" id="oldcontact">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto fugit ea, pariatur ducimus excepturi aliquid quisquam, odio similique recusandae magni eos adipisci? Asperiores quasi quidem aut, perspiciatis quod expedita at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam ratione non asperiores deserunt magni sit libero et accusamus omnis, minus ut cum quas, perferendis consequatur at ipsum. Voluptatibus, iusto quam!</p>
+    <form action="https://formspree.io/xnqbqrkd" method="POST">
+        <label>
+            Your email:
+            <input type="text" name="_replyto">
+        </label>
+        <label>
+            Your message:
+            <textarea name="message"></textarea>
+        </label>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<!-- contact form -->
+<div class="container align-items-center col-md-8 bg-light px-4 py-3 m-6" id="contact">
+    <form action="https://formspree.io/xnqbqrkd" method="POST">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputFirstName">First Name:</label>
+                <input type="text" class="form-control" id="inputFirstName" name="firstName" placeholder="First...">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputLastName">Last Name:</label>
+                <input type="text" class="form-control" id="inputLastName" name="lastName" placeholder="Last...">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputEmail">Email:</label>
+            <input type="email" class="form-control" id="inputEmail" name="_replyto" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="inputPhone">Phone Number:</label>
+            <input type="tel" class="form-control" id="inputPhone" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+        </div>
+    </form>
+</div>
+
+<!-- footer -->
+<div class="container" id="footer">
+    <div class="col-12 py-6 my-6">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil impedit velit tempora quasi, provident assumenda, eligendi, exercitationem labore explicabo fugit accusantium voluptatem harum aliquam cumque amet fugiat unde dignissimos ipsum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi dolorum ullam nulla accusantium. Quia sed at necessitatibus suscipit vel illum? Recusandae modi sit deserunt architecto veritatis consequuntur perferendis fugiat quod!</p>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
