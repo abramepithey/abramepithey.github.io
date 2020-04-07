@@ -7,18 +7,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
 
 <!-- navbar -->
-<nav class="navbar navbar-expand-sm navbar-light bg-light" id="navbar">
+<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light" id="navbar">
     <a class="navbar-brand" href="#landing">Abram Pithey</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-                <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" href="#landing">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#projects">Projects</a>
@@ -31,20 +34,33 @@
 </nav>
 
 <!-- landing page -->
-<div class="container p-6" id="landing">
-    <div class=""></div>
-</div>
+<header class="customHeader" id="landing">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-10 align-self-end">
+                <h1 class="text-uppercase font-weight-bold">Abram Pithey</h1>
+                <hr class="divider my-4">
+            </div>
+            <div class="col-lg-8 align-self-baseline">
+                <p class="text-white-75 mb-5">C# and .NET Framework, HTML, CSS, and Bootstrap</p>
+                <a class="btn btn-light btn-outline-dark btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+            </div>
+        </div>
+    </div>
+</header>
 
 <!-- about section -->
-<div class="row">
-    <div class="container-fluid bg-light" id="about">
+<div class="row bg-light mx-0 py-6">
+    <a class="anchor" id="about"></a>
+    <div class="col-8 mx-auto py-6">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus dicta voluptatibus velit, dolores temporibus iure officiis, numquam placeat, iusto cumque tempora nam voluptate? Suscipit laboriosam laudantium laborum tempore harum officia. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ex voluptatum totam a voluptatibus aliquam hic natus assumenda, sed, minima earum dolor? Labore, cum. Recusandae ipsam officia at ut dolorum.</p>
     </div>
 </div>
 
 <!-- projects section -->
-<div class="row row-cols-sm-2 row-cols-1 p-6 m-6" id="projects">
+<div class="row row-cols-sm-2 row-cols-1 p-6 mx-0">
     <div class="col mb-4">
+        <a class="anchor" id="projects"></a>
         <div class="card">
             <img src="..." class="card-img-top" alt="...">
             <div class="card-body">
@@ -99,7 +115,8 @@
 </div>
 
 <!-- contact form -->
-<div class="container align-items-center col-md-8 bg-light px-4 py-3 m-6" id="contact">
+<div class="container align-items-center col-md-8 bg-light px-4 py-3 m-6">
+    <a class="anchor" id="contact"></a>
     <form action="https://formspree.io/xnqbqrkd" method="POST">
         <div class="form-row">
             <div class="form-group col-md-6">
