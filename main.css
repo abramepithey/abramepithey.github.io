@@ -18,3 +18,7 @@ a.anchor {
     top: -3.5rem;
     visibility: hidden;
 }
+
+.navbar {
+    height: 3.5rem !important;
+}
