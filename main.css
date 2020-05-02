@@ -47,9 +47,9 @@ a.anchor {
 }
 
 .card-img-top {
-    filter: grayscale(100%);
+    filter: opacity(0.2);
 }
 
 .card:hover > .card-img-top {
-    filter: grayscale(0%);
+    filter: opacity(1);
 }
