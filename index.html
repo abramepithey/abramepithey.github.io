@@ -57,11 +57,11 @@
         <div class="row mx-0">
             <div class="col-md-6 p-5">
                 <h2 class="header mb-4">About Me</h2>
-                <p class="font-size-lg font-family-secondary">Hi, I’m Abram!</p>
-                <p class="font-size-lg font-family-secondary">I’m a student software developer at Eleven Fifty Academy located in downtown Indianapolis, Indiana.  I am currently focused on .NET, but have skills with HTML, CSS, and Bootstrap.</p>
-                <p class="font-size-lg font-family-secondary">Before software development, I was a cook, then an electrician, and then a barista. I’ve been interested in tech since I was a kid, so it was only natural that life would lead me here.</p>
-                <p class="font-size-lg font-family-secondary">You can usually find me making pour-over coffee, reading in my hammock, or spending time with my friends and family.</p>
-                <p class="font-size-lg font-family-secondary">I hope to hear from you soon!</p>
+                <p class="font-size-lg font-family-secondary scrollIntoView">Hi, I’m Abram!</p>
+                <p class="font-size-lg font-family-secondary scrollIntoView">I’m a student software developer at Eleven Fifty Academy located in downtown Indianapolis, Indiana.  I am currently focused on .NET, but have skills with HTML, CSS, and Bootstrap.</p>
+                <p class="font-size-lg font-family-secondary scrollIntoView">Before software development, I was a cook, then an electrician, and then a barista. I’ve been interested in tech since I was a kid, so it was only natural that life would lead me here.</p>
+                <p class="font-size-lg font-family-secondary scrollIntoView">You can usually find me making pour-over coffee, reading in my hammock, or spending time with my friends and family.</p>
+                <p class="font-size-lg font-family-secondary scrollIntoView">I hope to hear from you soon!</p>
                 <a class="btn btn-primary btn-xl font-size-lg" href="#contact">Contact Me</a>
             </div>
             <div class="col-md-6 p-5">
@@ -174,23 +174,37 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
+    // executing function when document is loaded
     $(document).ready(function()
     {
+        // detecting link click
         $("a").on('click', function(event)
         {
+            // makes sure anchor links somewhere
             if (this.hash !== "")
             {
+                // stops default link click behavior
                 event.preventDefault();
-                var hash = this.hash;
+                // saves current hash as 
+                var linkHash = this.hash;
+                // actual animation to slide entire document to hash location
                 $('html, body').animate(
                     {
-                        scrollTop: $(hash).offset().top
+                        scrollTop: $(linkHash).offset().top
                     }, 500, function()
                     {
-                        window.location.hash = hash;
+                        window.location.hash = linkHash;
                     }
                 );
             }
+        });
+        $(".card").mouseenter(function()
+        {
+            $(".card-img-top").css("visibility", "visible");
+        });
+        $(".card").mouseleave(function()
+        {
+            $(".card-img-top").css("visibility", "hidden");
         });
     });
 </script>
