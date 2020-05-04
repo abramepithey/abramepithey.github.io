@@ -120,6 +120,18 @@
         </div>
     </div>
 </div>
+<div class="row mx-0 no-gutters">
+    <div class="col-6">
+        <div class="image">
+            <img src="assets/csscreaturescreenshot.JPG" class="img img-responsive full-width">
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="image">
+            <img src="assets/csscreaturescreenshot.JPG" class="img img-responsive full-width">
+        </div>
+    </div>
+</div>
 
 <!-- contact form -->
 <div class="row mx-0 my-4">
@@ -193,19 +205,20 @@
                         scrollTop: $(linkHash).offset().top
                     }, 500, function()
                     {
+                        // appends link hash to url after animation
                         window.location.hash = linkHash;
                     }
                 );
             }
         });
-        $(".card").mouseenter(function()
-        {
-            $(".card-img-top").css("visibility", "visible");
-        });
-        $(".card").mouseleave(function()
-        {
-            $(".card-img-top").css("visibility", "hidden");
-        });
+    //     $(".card").mouseenter(function()
+    //     {
+    //         $(".card-img-top").css("visibility", "visible");
+    //     });
+    //     $(".card").mouseleave(function()
+    //     {
+    //         $(".card-img-top").css("visibility", "hidden");
+    //     });
     });
 </script>
 </body>
