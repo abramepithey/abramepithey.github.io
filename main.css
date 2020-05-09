@@ -46,14 +46,6 @@ a.anchor {
     font-family: 'Lato', sans-serif;
 }
 
-.card-img-top {
-    filter: opacity(0.2);
-}
-
-.card:hover > .card-img-top {
-    filter: opacity(1);
-}
-
 .image {
     position: relative;
     overflow: hidden;
@@ -115,4 +107,14 @@ a.anchor {
     visibility: visible;
     opacity: 1;
     transition-delay: 0ms;
+}
+
+#contactSection {
+    background-color: #668ca1;
+}
+
+a.contactPadding {
+    display: block;
+    position: relative;
+    visibility: hidden;
 }
