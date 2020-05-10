@@ -12,7 +12,7 @@
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
 
 <!-- navbar -->
-<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light" id="navbar">
+<nav class="navbar fixed-top navbar-expand-sm navbar-light navbar-bg" id="navbar">
     <a class="navbar-brand" href="#landing">Abram Pithey</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -56,13 +56,14 @@
         <a class="anchor" id="about"></a>
         <div class="row mx-0">
             <div class="col-md-6 p-5">
-                <h2 class="header mb-5">About Me</h2>
-                <h4 class="header">Hi, I’m Abram!</h4>
-                <p class="font-size-lg">I’m a student software developer at Eleven Fifty Academy located in downtown Indianapolis, Indiana.  I am currently focused on .NET, but have skills with HTML, CSS, and Bootstrap.</p>
-                <p class="font-size-lg">Before software development, I was a cook, then an electrician, and then a barista. I’ve been interested in tech since I was a kid, so it was only natural that life would lead me here.</p>
-                <p class="font-size-lg">You can usually find me making pour-over coffee, reading in my hammock, or spending time with my friends and family.</p>
-                <p class="font-size-lg">I hope to hear from you soon!</p>
-                <a class="btn btn-primary btn-xl font-size-lg" href="#contact">Contact Me</a>
+                <h2 class="header mb-4">About Me</h2>
+                <p class="font-size-lg font-family-secondary">Hi, I’m Abram!</p>
+                <p class="font-size-lg font-family-secondary">I’m a student software developer at Eleven Fifty Academy located in downtown Indianapolis, Indiana.  I am currently focused on .NET, but have skills with HTML, CSS, and Bootstrap.</p>
+                <p class="font-size-lg font-family-secondary">Before software development, I was a cook, then an electrician, and then a barista. I’ve been interested in tech since I was a kid, so it was only natural that life would lead me here.</p>
+                <p class="font-size-lg font-family-secondary">You can usually find me making pour-over coffee, reading in my hammock, or spending time with my friends and family.</p>
+                <p class="font-size-lg font-family-secondary">I hope to hear from you soon!</p>
+                <a class="btn btn-primary btn-xl font-size-lg mr-3 mb-3" href="#contact">Contact Me</a>
+                <a class="btn btn-primary btn-xl font-size-lg mb-3" href="./assets/Resume.pdf" download="AbramPitheyResume" target="_blank">My Resume</a>
             </div>
             <div class="col-md-6 p-5">
                 <img src="assets/MEL_5400smaller.jpg" class="rounded img-fluid" alt="Profile Picture">
@@ -72,86 +73,110 @@
 </div>
 
 <!-- projects section -->
-<div class="row mx-0 bg-light">
-    <div class="container mt-4">
+<div class="row mx-0 bg-light no-gutters">
+    <div class="container text-center my-4">
         <a class="anchor mb-5" id="projects"></a>
-        <h3 class="header mb-3 pl-3">My Projects</h3>
-        <div class="row row-cols-sm-2 row-cols-1 mx-0">
-            <div class="col mb-4">
-                <div class="card">
-                    <img src="assets/csscreaturescreenshot.JPG" class="card-img-top" alt="CSS Creature">
-                    <div class="card-body">
-                        <h5 class="card-title">CSS Creature</h5>
-                        <p class="card-text">Small CodePen to show and practice CSS skills.</p>
-                        <a href="https://codepen.io/abramepithey/pen/rNVWrZg" class="btn btn-light btn-xl">CodePen</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card">
-                    <img src="assets/terminalhackerscreenshot.PNG" class="card-img-top" alt="Terminal hacker from Fallout">
-                    <div class="card-body">
-                        <h5 class="card-title">Terminal Hacker</h5>
-                        <p class="card-text">This is a project based on the Fallout hacking minigame.</p>
-                        <a href="https://github.com/abramepithey/TerminalHacker" class="btn btn-light btn-xl">Github</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card">
-                    <img src="assets/storefrontscreenshot.JPG" class="card-img-top" alt="Storefront">
-                    <div class="card-body">
-                        <h5 class="card-title">Static Storefront</h5>
-                        <p class="card-text">This project was to get more familiar with Bootstrap, and HTML and CSS as a whole</p>
-                        <a href="https://github.com/abramepithey/static-storefront" class="btn btn-light btn-xl">Github</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card">
-                    <img src="assets/goldbadgechallengesscreenshot.JPG" class="card-img-top" alt="Claims department mockup">
-                    <div class="card-body">
-                        <h5 class="card-title">Gold Badge Challenges</h5>
-                        <p class="card-text">These are multiple little challenges intended to cement the things we have learned thus far.</p>
-                        <a href="https://github.com/abramepithey/GoldBadgeChallenges" class="btn btn-light btn-xl">Github</a>
-                    </div>
-                </div>
-            </div>
+        <h2 class="header mb-4 pl-3">Projects</h2>
+    </div>
+    <div class="col-lg-4 col-sm-6 hoverContainer">
+        <div class="image">
+            <img src="assets/csscreaturescreenshot.JPG" class="img img-responsive full-width">
+            <div class="filterColor"></div>
+        </div>
+        <div class="card-body text-center projectText">
+            <h5 class="card-title">CSS Creature</h5>
+            <p class="card-text">Small CodePen to show and practice CSS skills.</p>
+            <a href="https://codepen.io/abramepithey/pen/rNVWrZg" class="btn btn-primary btn-xl">CodePen</a>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 hoverContainer">
+        <div class="image">
+            <img src="assets/terminalhackerscreenshot.PNG" class="img img-responsive full-width">
+            <div class="filterColor"></div>
+        </div>
+        <div class="card-body text-center projectText">
+            <h5 class="card-title">Terminal Hacker</h5>
+            <p class="card-text">This is a project based on the Fallout hacking minigame.</p>
+            <a href="https://github.com/abramepithey/TerminalHacker" class="btn btn-primary btn-xl">Github</a>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 hoverContainer">
+        <div class="image">
+            <img src="assets/storefrontscreenshot.JPG" class="img img-responsive full-width">
+            <div class="filterColor"></div>
+        </div>
+        <div class="card-body text-center projectText">
+            <h5 class="card-title">Static Storefront</h5>
+            <p class="card-text">This project was to get more familiar with Bootstrap, and HTML and CSS as a whole</p>
+            <a href="https://github.com/abramepithey/static-storefront" class="btn btn-primary btn-xl">Github</a>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 hoverContainer">
+        <div class="image">
+            <img src="assets/goldbadgechallengesscreenshot.JPG" class="img img-responsive full-width">
+            <div class="filterColor"></div>
+        </div>
+        <div class="card-body text-center projectText">
+            <h5 class="card-title">Gold Badge Challenges</h5>
+            <p class="card-text">These are multiple little challenges intended to cement the things we have learned thus far.</p>
+            <a href="https://github.com/abramepithey/GoldBadgeChallenges" class="btn btn-primary btn-xl">Github</a>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 hoverContainer">
+        <div class="image">
+            <img src="assets/24hourprojectscreenshot.JPG" class="img img-responsive full-width">
+            <div class="filterColor"></div>
+        </div>
+        <div class="card-body text-center projectText">
+            <h5 class="card-title">24 Hour Project</h5>
+            <p class="card-text">Team-based project designed to strengthen team project practices and API basics</p>
+            <a href="https://github.com/m0thm4n/NewSkyDivingBook" class="btn btn-primary btn-xl">Github</a>
+        </div>
+    </div>
+    <div class="col-lg-4 col-sm-6 hoverContainer">
+        <div class="image">
+            <!-- <img src="#" class="img img-responsive full-width"> -->
+            <div class="filterColor"></div>
+        </div>
+        <div class="card-body text-center projectText">
+            <h5 class="card-title">Red Badge Challenge</h5>
+            <p class="card-text">TBD</p>
+            <a href="#" class="btn btn-primary btn-xl">Nowhere yet</a>
         </div>
     </div>
 </div>
 
 <!-- contact form -->
-<div class="row mx-0 my-4">
+<div class="row mx-0" id="contactSection">
     <a class="anchor pt-5" id="contact"></a>
-    <div class="container align-items-center border rounded col-md-8 bg-light p-4 my-5">
+    <div class="container align-items-center border rounded col-md-8 bg-light p-4 my-7 my-md-8">
         <h3 class="header mb-3">Contact Me</h3>
         <form action="https://formspree.io/xnqbqrkd" method="POST">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputFirstName">First Name:</label>
-                    <input type="text" class="form-control" id="inputFirstName" name="firstName" placeholder="First...">
+                    <input type="text" class="form-control font-size-lg font-family-secondary" id="inputFirstName" name="firstName">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputLastName">Last Name:</label>
-                    <input type="text" class="form-control" id="inputLastName" name="lastName" placeholder="Last...">
+                    <input type="text" class="form-control font-size-lg font-family-secondary" id="inputLastName" name="lastName">
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputEmail">Email:</label>
-                <input type="email" class="form-control" id="inputEmail" name="_replyto" placeholder="Email">
+                <input type="email" class="form-control font-size-lg font-family-secondary" id="inputEmail" name="_replyto">
             </div>
             <div class="form-group">
                 <label for="inputPhone">Phone Number:</label>
-                <input type="tel" class="form-control" id="inputPhone" name="phone" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <input type="tel" class="form-control font-size-lg font-family-secondary" id="inputPhone" name="phone">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary font-size-lg mt-2">Submit</button>
         </form>
     </div>
 </div>
 
 <!-- footer -->
-<footer class="pt-4 mt-md-2 pt-md-3 border-top">
+<footer class="pt-4 pt-md-3 border-top">
     <div class="row mx-0">
         <div class="col-md">
             <ul class="list-inline text-small d-flex justify-content-end">
@@ -172,5 +197,34 @@
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    // executing function when document is loaded
+    $(document).ready(function()
+    {
+        // detecting link click
+        $("a").on('click', function(event)
+        {
+            // makes sure anchor links somewhere
+            if (this.hash !== "")
+            {
+                // stops default link click behavior
+                event.preventDefault();
+                // saves current hash as 
+                var linkHash = this.hash;
+                // actual animation to slide entire document to hash location
+                $('html, body').animate(
+                    {
+                        scrollTop: $(linkHash).offset().top
+                    }, 500, function()
+                    {
+                        // appends link hash to url after animation
+                        window.location.hash = linkHash;
+                    }
+                );
+            }
+        });
+    });
+</script>
 </body>
 </html>
