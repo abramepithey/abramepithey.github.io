@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: 'Bitter', serif;
+    font-size: 1rem;
 }
 
 .navbar-bg {
@@ -147,5 +148,23 @@ footer {
     .ml-md-8,
     .mx-md-8 {
         margin-left: 8rem !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .responsive-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .responsive-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .responsive-text {
+        font-size: 1.4rem;
     }
 }

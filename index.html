@@ -52,8 +52,8 @@
 
 <!-- about section -->
 <div class="row mx-0">
-    <div class="container align-items-center p-3 my-md-5 my-3">
-        <a class="anchor" id="about"></a>
+    <div class="container align-items-center">
+        <a class="anchor pt-3 mb-md-3" id="about"></a>
         <div class="row mx-0">
             <div class="order-lg-1 col-lg-6 p-sm-5 p-4 order-2">
                 <h2 class="header mb-4">About Me</h2>
@@ -74,11 +74,11 @@
 
 <!-- projects section -->
 <div class="row mx-0 bg-light no-gutters">
-    <div class="container text-center">
-        <a class="anchor mb-5" id="projects"></a>
+    <div class="container-fluid text-center">
+        <a class="anchor mb-4" id="projects"></a>
         <h2 class="header mb-4 pl-3">Projects</h2>
     </div>
-    <div class="col-lg-4 col-sm-6 hoverContainer">
+    <div class="col-xl-3 col-md-4 col-sm-6 hoverContainer">
         <div class="image">
             <img src="assets/csscreaturescreenshot.JPG" class="img img-responsive full-width">
             <div class="filterColor"></div>
@@ -89,7 +89,7 @@
             <a href="https://codepen.io/abramepithey/pen/rNVWrZg" class="btn btn-primary btn-xl">CodePen</a>
         </div>
     </div>
-    <div class="col-lg-4 col-sm-6 hoverContainer">
+    <div class="col-xl-3 col-md-4 col-sm-6 hoverContainer">
         <div class="image">
             <img src="assets/terminalhackerscreenshot.PNG" class="img img-responsive full-width">
             <div class="filterColor"></div>
@@ -100,7 +100,7 @@
             <a href="https://github.com/abramepithey/TerminalHacker" class="btn btn-primary btn-xl">Github</a>
         </div>
     </div>
-    <div class="col-lg-4 col-sm-6 hoverContainer">
+    <div class="col-xl-3 col-md-4 col-sm-6 hoverContainer">
         <div class="image">
             <img src="assets/storefrontscreenshot.JPG" class="img img-responsive full-width">
             <div class="filterColor"></div>
@@ -111,7 +111,7 @@
             <a href="https://github.com/abramepithey/static-storefront" class="btn btn-primary btn-xl">Github</a>
         </div>
     </div>
-    <div class="col-lg-4 col-sm-6 hoverContainer">
+    <div class="col-xl-3 col-md-4 col-sm-6 hoverContainer">
         <div class="image">
             <img src="assets/goldbadgechallengesscreenshot.JPG" class="img img-responsive full-width">
             <div class="filterColor"></div>
@@ -122,7 +122,7 @@
             <a href="https://github.com/abramepithey/GoldBadgeChallenges" class="btn btn-primary btn-xl">Github</a>
         </div>
     </div>
-    <div class="col-lg-4 col-sm-6 hoverContainer">
+    <div class="col-xl-3 col-md-4 col-sm-6 hoverContainer">
         <div class="image">
             <img src="assets/24hourprojectscreenshot.JPG" class="img img-responsive full-width">
             <div class="filterColor"></div>
@@ -133,7 +133,7 @@
             <a href="https://github.com/m0thm4n/NewSkyDivingBook" class="btn btn-primary btn-xl">Github</a>
         </div>
     </div>
-    <div class="col-lg-4 col-sm-6 hoverContainer">
+    <div class="col-xl-3 col-md-4 col-sm-6 hoverContainer">
         <div class="image">
             <img src="assets/bluebadgechallengescreenshot.JPG" class="img img-responsive full-width">
             <div class="filterColor"></div>
@@ -142,6 +142,18 @@
             <h5 class="card-title">Blue Badge Challenge</h5>
             <p class="card-text">Team-based web API utilizing ASP.NET with a focus on solid web practices and team project organization</p>
             <a href="https://github.com/epalamarevic/Flopify" class="btn btn-primary btn-xl">Github</a>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-4 col-sm-6 hoverContainer">
+        <div class="image">
+            <img src="assets/RedBadgeProjectScreenshot.png" class="img img-responsive full-width">
+            <div class="filterColor"></div>
+        </div>
+        <div class="card-body text-center projectText">
+            <h5 class="card-title">Charcoal Companion</h5>
+            <p class="card-text">Final Red Badge web application utilizing ASP.NET MVC that brings all that has been learned into one, polished product</p>
+            <a href="https://charcoalcompanionmvc.azurewebsites.net/" class="btn btn-primary btn-xl">Deployed Site</a>
+            <a href="https://github.com/abramepithey/CharcoalCompanion" class="btn btn-primary btn-xl">Github Repository</a>
         </div>
     </div>
 </div>
@@ -155,25 +167,28 @@
                 <h3 class="header mb-3">Contact Me</h3>
                 <form action="https://formspree.io/xnqbqrkd" method="POST">
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-6 responsive-text">
                             <label for="inputFirstName">First Name:</label>
                             <input type="text" class="form-control font-size-lg font-family-secondary" id="inputFirstName" name="firstName">
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-md-6 responsive-text">
                             <label for="inputLastName">Last Name:</label>
                             <input type="text" class="form-control font-size-lg font-family-secondary" id="inputLastName" name="lastName">
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group responsive-text">
                         <label for="inputEmail">Email:</label>
                         <input type="email" class="form-control font-size-lg font-family-secondary" id="inputEmail" name="_replyto">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group responsive-text">
                         <label for="inputPhone">Phone Number:</label>
                         <input type="tel" class="form-control font-size-lg font-family-secondary" id="inputPhone" name="phone">
                     </div>
                     <button type="submit" class="btn btn-primary font-size-lg mt-2">Submit</button>
                 </form>
+            </div>
+            <div class="d-block d-md-none col-12 px-5">
+                <hr class="my-0" />
             </div>
             <div class="col-md-6 p-5 borderLeft">
                 <img src="assets/MEL_5400smaller.jpg" class="rounded img-fluid" alt="Profile Picture">
