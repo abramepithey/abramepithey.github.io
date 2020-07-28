@@ -2,6 +2,7 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: 'Bitter', serif;
+    font-size: 1rem;
 }
 
 .navbar-bg {
@@ -37,9 +38,9 @@ a.anchor {
     border-color: #668ca1;
 }
 
-.btn-primary:hover {
-    background-color: #80b0ca;
-    border-color: #80b0ca;
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover, .btn-primary:active:focus {
+    background-color: #80b0ca !important;
+    border-color: #80b0ca !important;
 }
 
 .font-family-secondary {
@@ -109,13 +110,28 @@ a.anchor {
     transition-delay: 0ms;
 }
 
-#contactSection {
-    background-color: #668ca1;
+.form-control {
+    border-color: rgb(224, 224, 224);
+}
+
+.form-control:focus {
+    border-color: #80b0ca;
+}
+
+footer {
+    background-color: rgb(224, 224, 224);
 }
 
 .my-7 {
     margin-top: 6.5rem;
     margin-bottom: 6.5rem;
+}
+
+@media (min-width: 768px) {
+    .borderLeft {
+        border-left: 1px solid rgb(224, 224, 224);
+        margin-right: 0;
+    }
 }
 
 @media (min-width: 768px) {
@@ -137,5 +153,23 @@ a.anchor {
     .ml-md-8,
     .mx-md-8 {
         margin-left: 8rem !important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .responsive-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .responsive-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .responsive-text {
+        font-size: 1.4rem;
     }
 }
