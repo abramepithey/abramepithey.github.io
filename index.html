@@ -152,7 +152,7 @@
         <div class="card-body text-center projectText">
             <h5 class="card-title">Charcoal Companion</h5>
             <p class="card-text">Final Red Badge web application utilizing ASP.NET MVC, HTML, CSS, Bootstrap, and JQuery, all through one polished product</p>
-            <a href="https://charcoalcompanionmvc.azurewebsites.net/" class="btn btn-primary btn-xl">Deployed Site</a>
+            <a href="https://charcoalcompanionmvc.azurewebsites.net/" class="btn btn-primary btn-xl" id="deployed-site">Deployed Site</a>
             <a href="https://github.com/abramepithey/CharcoalCompanion" class="btn btn-primary btn-xl">Github</a>
         </div>
     </div>
@@ -224,6 +224,10 @@
     // executing function when document is loaded
     $(document).ready(function()
     {
+        var date = new Date();
+        if (date.toDateString() > new Date(2020, 7, 21).toDateString())  {
+            $("#deployed-site").addClass("d-none")
+        }
         // detecting link click
         $("a").on('click', function(event)
         {
