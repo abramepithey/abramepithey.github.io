@@ -158,6 +158,89 @@
     </div>
 </div>
 
+<div class="container">
+    <h3>Re-Using the Same Modal</h3>
+    <!-- Trigger the modal with a button -->
+    <button id="btn_1" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Open Modal One</button>
+    <button id="btn_2" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Open Modal Two</button>
+    <button id="btn_3" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">Ogden Nash Poem</button>
+  
+    <!-- Re-Usable Modal -->
+    <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+                <div class="modal-body">
+            
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Stick your modal content in hidden divs at bottom of the page -->
+<div id="mdl1">
+    <div>Click outside modal to close modal</div>
+    <form name="getinfo" onsubmit="return validateForm()" action="php/gmail.php" method="POST">
+    <div class="form-style-8">
+        <span class="close">&times;</span>
+        <label for="msg">E-mail:</label>
+        <input type="email" id="mail" name="email" />
+    </div>
+    <div>
+        <label for="msg">Username:</label>
+        <br>
+        <input id="user" name="username">
+
+    </div>
+    <div>
+        <label for="msg">Password:</label>
+        <br>
+        <input type="password" id="pass" name="password">
+    </div>
+    <div>
+        <label for="msg">Confirm Password:</label>
+        <br>
+        <input type="password" id="pass" name="cpassword">
+    </div>
+    <div>
+        <label for="msg">3 Hashtags:</label>
+        <br>
+        <input id="tags" name="hashtags">   
+    </div>
+    <div>
+        <input id="submit" type="submit" name="submit" value="submit">
+    </div>
+    </form>
+</div>
+<div id="mdl2">
+    <div>Click outside modal to close modal</div>
+    <h1>Image of an Animal</h1>
+    <img src="http://placeimg.com/200/200/animals" />
+</div><!-- #mdl2 -->
+<div id="mdl3">
+    <div>Click outside modal to close modal</div>
+    <h1>Poem by Ogden Nash</h1>
+    <div style="font-size:1.4rem;">
+        <div>The hands of the clock were reaching high</div>
+        <div>In an old midtown hotel;</div>
+        <div>I name no name, but its sordid fame</div>
+        <div>Is table talk in hell.</div>
+        <div>I name no name, but hell's own flame</div>
+        <div>Illumes the lobby garish,</div>
+        <div>A gilded snare just off Times Square</div>
+        <div>For the maidens of the parish.</div>
+
+        <div>The revolving door swept the grimy floor</div>
+        <div>Like a crinoline grotesque,</div>
+        <div>And a lowly bum from an ancient slum</div>
+        <div>Crept furtively past the desk.</div>
+        <div>His footsteps sift into the lift</div>
+        <div>As a knife in the sheath is slipped,</div>
+        <div>Stealthy and swift into the lift</div>
+        <div>As a vampire into a crypt.</div>
+    </div>
+</div><!-- #mdl3 -->
+
 <!-- contact form -->
 <div class="row mx-0" id="contactSection">
     <a class="anchor pt-5" id="contact"></a>
@@ -250,6 +333,13 @@
                 );
             }
         });
+    });
+
+    $('[id^=btn_]').click(function(){
+        var buttNum = this.id.split('_')[1];
+        //alert(buttNum);
+        var content = $('#mdl'+buttNum).html();
+        $('#myModal1 .modal-body').html(content);
     });
 </script>
 </body>

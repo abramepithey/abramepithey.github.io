@@ -127,6 +127,8 @@ footer {
     margin-bottom: 6.5rem;
 }
 
+#mdl1, #mdl2, #mdl3{display:none;} /*  Hide the divs containing modal content */
+
 @media (min-width: 768px) {
     .borderLeft {
         border-left: 1px solid rgb(224, 224, 224);
