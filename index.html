@@ -152,8 +152,19 @@
         <div class="card-body text-center projectText">
             <h5 class="card-title">Charcoal Companion</h5>
             <p class="card-text">Final Red Badge web application utilizing ASP.NET MVC, HTML, CSS, Bootstrap, and JQuery, all through one polished product</p>
-            <a href="https://charcoalcompanionmvc.azurewebsites.net/" class="btn btn-primary btn-xl" id="deployed-site">Deployed Site</a>
             <a href="https://github.com/abramepithey/CharcoalCompanion" class="btn btn-primary btn-xl">Github</a>
+        </div>
+    </div>
+    <div class="col-xl-3 col-md-4 col-sm-6 hoverContainer">
+        <div class="image">
+            <img src="assets/TerminalHackerBlazorScreenshot.png" class="img img-responsive full-width">
+            <div class="filterColor"></div>
+        </div>
+        <div class="card-body text-center projectText">
+            <h5 class="card-title">Terminal Hacker Blazor</h5>
+            <p class="card-text">Remake of the Terminal Hacker project using .NET Core 3.1, Blazor WebAssembly, and hosted on Azure.</p>
+            <a href="https://terminalhacker.azurewebsites.net" class="btn btn-primary btn-xl" id="deployed-site">Deployed Site</a>
+            <a href="https://github.com/abramepithey/TerminalHackerBlazor" class="btn btn-primary btn-xl">Github</a>
         </div>
     </div>
 </div>
@@ -224,10 +235,6 @@
     // executing function when document is loaded
     $(document).ready(function()
     {
-        var date = new Date();
-        if (date.toDateString() > new Date(2020, 7, 21).toDateString())  {
-            $("#deployed-site").addClass("d-none")
-        }
         // detecting link click
         $("a").on('click', function(event)
         {
