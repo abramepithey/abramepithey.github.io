@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+}
+
+.centered-image {
+    text-align: center;
+}
+
+ul {
+    background-color: lightgray;
+}
+
+ul li {
+    font-size: 24px;
+    background-color: lightgreen;
+}
+
+ol li {
+    font-size: 20px;
+    background-color: lightblue;
+}
+
+ul.home li {
+    font-size: 30px;
+    background-color: lightgrey;
+}
+
+ul.home li a {
+    text-decoration: none;
+    color: darkolivegreen;
+}
