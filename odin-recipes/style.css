@@ -8,21 +8,30 @@ h1 {
 
 ul {
     background-color: lightgray;
+    padding: 8px;
+    margin: 8px;
 }
 
 ul li {
     font-size: 24px;
     background-color: lightgreen;
+    margin: 8px;
+}
+
+ol {
+    padding: 8px;
 }
 
 ol li {
     font-size: 20px;
     background-color: lightblue;
+    margin: 8px;
 }
 
 ul.home li {
     font-size: 30px;
     background-color: lightgrey;
+    margin: 8px;
 }
 
 ul.home li a {
