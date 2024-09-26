@@ -22,3 +22,10 @@ body > div, .header, .footer {
     font-size: 24px;
     font-weight: 900;
 }
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    gap: 16px;
+}
