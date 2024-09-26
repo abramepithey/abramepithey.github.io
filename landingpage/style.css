@@ -29,3 +29,8 @@ body > div, .header, .footer {
     list-style-type: none;
     gap: 16px;
 }
+
+.links {
+    text-decoration: none;
+    color: #E5E7EB;
+}
