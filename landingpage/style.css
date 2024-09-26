@@ -9,3 +9,11 @@ body {
 body > div, .header, .footer {
     padding: 0 240px;
 }
+
+.header, .landing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
