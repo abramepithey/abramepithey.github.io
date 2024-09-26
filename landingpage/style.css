@@ -6,6 +6,6 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-body > div {
+body > div, .header, .footer {
     padding: 0 240px;
 }
