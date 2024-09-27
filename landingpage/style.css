@@ -7,7 +7,7 @@ body {
 }
 
 body > div, .header, .footer {
-    padding: 0 240px;
+    padding: 0 15vw;
 }
 
 .header, .landing {
