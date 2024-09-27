@@ -34,3 +34,7 @@ body > div, .header, .footer {
     text-decoration: none;
     color: #E5E7EB;
 }
+
+.landing-text, .landing-image {
+    flex: 1;
+}
