@@ -71,3 +71,7 @@ button {
     border-radius: 4px;
     background-color: #3882F6;
 }
+
+.landing-text > button {
+    border: 0;
+}
