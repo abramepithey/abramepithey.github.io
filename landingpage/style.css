@@ -62,3 +62,12 @@ body > div, .header, .footer {
     color: #E5E7EB;
     margin: 0 0 8px 0;
 }
+
+button {
+    font-size: 16px;
+    color: #E5E7EB;
+    font-weight: 600;
+    padding: 6px 20px;
+    border-radius: 4px;
+    background-color: #3882F6;
+}
