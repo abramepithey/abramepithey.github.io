@@ -10,8 +10,11 @@ body > div, .header, .footer {
     padding: 0 15vw;
 }
 
-.header, .landing {
+.header, .landing, .nav-links, .card-section, .card-list, .card, .quote, .cta, .footer {
     display: flex;
+}
+
+.header, .landing {
     justify-content: space-between;
     align-items: center;
     background-color: #1F2937;
@@ -24,7 +27,6 @@ body > div, .header, .footer {
 }
 
 .nav-links {
-    display: flex;
     justify-content: space-around;
     list-style-type: none;
     gap: 16px;
