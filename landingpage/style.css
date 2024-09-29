@@ -49,3 +49,10 @@ body > div, .header, .footer {
     max-height: 100%;
     object-fit: contain;
 }
+
+.landing-text > h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    margin: 0;
+}
