@@ -35,6 +35,11 @@ body > div, .header, .footer {
     color: #E5E7EB;
 }
 
+.landing {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
 .landing-text, .landing-image {
     flex: 1;
 }
