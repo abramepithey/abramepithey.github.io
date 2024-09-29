@@ -56,3 +56,9 @@ body > div, .header, .footer {
     font-weight: 900;
     margin: 0;
 }
+
+.landing-text > p {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 0 0 8px 0;
+}
