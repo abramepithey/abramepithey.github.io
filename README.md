@@ -3,3 +3,4 @@ This repo houses my personal portfolio website, originally created back in 2020 
 
 #### Credit
 Landing Page index image: Luca Bravo - https://unsplash.com/photos/turned-on-gray-laptop-computer-XJXWbfSo2f0?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
+Card images: Aditya Chinchure - https://unsplash.com/photos/blue-playing-cards-hyN9aU9Tm-c?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash
