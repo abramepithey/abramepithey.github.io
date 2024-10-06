@@ -84,6 +84,12 @@ button {
     padding: 1vw 20vw 5vw;
 }
 
+.card-section > h3 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
 .footer {
     justify-content: center;
     align-items: center;
