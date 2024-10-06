@@ -90,6 +90,12 @@ button {
     font-weight: 900;
 }
 
+.card-list {
+    display: flex;
+    justify-content: center;
+    gap: 46px;
+}
+
 .footer {
     justify-content: center;
     align-items: center;
