@@ -138,6 +138,14 @@ button {
     padding-bottom: 0;
 }
 
+.quote-tribute {
+    align-self: flex-end;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 1vw;
+    margin-right: 5vw;
+}
+
 .footer {
     justify-content: center;
     align-items: center;
