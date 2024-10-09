@@ -124,6 +124,11 @@ button {
     flex-direction: column;
 }
 
+.quote-body, .quote-tribute {
+    padding-right: 6vw;
+    padding-left: 6vw;
+}
+
 .footer {
     justify-content: center;
     align-items: center;
