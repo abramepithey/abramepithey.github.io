@@ -129,6 +129,15 @@ button {
     padding-left: 6vw;
 }
 
+.quote-body {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 36px;
+    color: #1F2937;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .footer {
     justify-content: center;
     align-items: center;
