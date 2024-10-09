@@ -117,6 +117,13 @@ button {
     color: #1F2937;
 }
 
+.quote {
+    background-color: #E5E7EB;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    flex-direction: column;
+}
+
 .footer {
     justify-content: center;
     align-items: center;
