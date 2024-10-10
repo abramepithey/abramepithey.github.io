@@ -170,6 +170,11 @@ button {
     font-weight: lighter;
 }
 
+.cta > button {
+    border-color: #E5E7EB;
+    border-style: solid;
+}
+
 .footer {
     justify-content: center;
     align-items: center;
