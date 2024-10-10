@@ -155,6 +155,12 @@ button {
     align-items: center;
 }
 
+.cta > div > h5, .cta > div > p {
+    color: #F9FAF8;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .footer {
     justify-content: center;
     align-items: center;
