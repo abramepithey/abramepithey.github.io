@@ -41,3 +41,13 @@ function playGame takes integer number of rounds, default 5
         alert 'You lose...'
 
 */
+
+function getComputerChoice() {
+    let rand = Math.random();
+    if (rand < 1/3)
+        return 'Rock';
+    else if  (rand < 2/3)
+        return 'Paper';
+    else
+        return 'Scissors';
+}
