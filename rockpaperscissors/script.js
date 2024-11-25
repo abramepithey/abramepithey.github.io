@@ -91,11 +91,11 @@ function playGame(rounds = 5) {
     }
 
     if (humanScore === computerScore)
-        alert('Tie game');
+        alert(`Tie game, ${humanScore} to ${computerScore}`);
     else if (humanScore > computerScore)
-        alert('You win, good game!');
+        alert(`You win, ${humanScore} to ${computerScore}, good game!`);
     else
-        alert('You lose, better luck next time...');
+        alert(`You lose, ${humanScore} to ${computerScore}, better luck next time...`);
 }
 
 playGame();
