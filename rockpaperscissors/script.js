@@ -75,8 +75,12 @@ function playGame(rounds = 5) {
         else if (getComputerChoice == 'Rock' && getHumanChoice == 'Scissors' ||
                 getComputerChoice == 'Paper' && getHumanChoice == 'Rock' ||
                 getComputerChoice == 'Scissors' && getHumanChoice == 'Paper') {
-                    alert('You lose, {computerChoice} beats {humanChoice}');
-                    
+            alert(`You lose, ${computerChoice} beats ${humanChoice}`);
+            computerScore++;
+        }
+        else {
+            alert(`You win, ${humanChoice} beats ${computerChoice}`);
+            humanScore++;
         }
     }
 
