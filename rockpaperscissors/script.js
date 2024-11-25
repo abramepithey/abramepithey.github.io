@@ -71,7 +71,7 @@ function playGame(rounds = 5) {
     
     function playRound(computerChoice, humanChoice) {
         if (computerChoice === humanChoice)
-            alert('Tie');
+            alert(`Tie, ${computerChoice} and ${humanChoice}`);
         else if (computerChoice == 'Rock' && humanChoice == 'Scissors' ||
                 computerChoice == 'Paper' && humanChoice == 'Rock' ||
                 computerChoice == 'Scissors' && humanChoice == 'Paper') {
