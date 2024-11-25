@@ -68,6 +68,17 @@ function getHumanChoice(attempts = 3) {
 function playGame(rounds = 5) {
     let humanScore = 0;
     let computerScore = 0;
+    
+    function playRound(getComputerChoice, getHumanChoice) {
+        if (getComputerChoice === getHumanChoice)
+            alert('Tie');
+        else if (getComputerChoice == 'Rock' && getHumanChoice == 'Scissors' ||
+                getComputerChoice == 'Paper' && getHumanChoice == 'Rock' ||
+                getComputerChoice == 'Scissors' && getHumanChoice == 'Paper') {
+                    alert('You lose, {computerChoice} beats {humanChoice}');
+                    
+        }
+    }
 
     for (i = 1; i <= rounds; i++) {
         let computerChoice = getComputerChoice();
