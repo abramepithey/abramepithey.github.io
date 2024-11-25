@@ -53,7 +53,7 @@ function getComputerChoice() {
 }
 
 function getHumanChoice(attempts = 3) {
-    for (i = 1; i <= attempts; i++) {
+    for (let i = 1; i <= attempts; i++) {
         let response = prompt('Select "Rock", "Paper", or "Scissors"').toLowerCase();
         if (response === 'rock' || response === 'paper' || response === 'scissors')
             return (response[0].toUpperCase() + response.substring(1));
@@ -84,7 +84,7 @@ function playGame(rounds = 5) {
         }
     }
 
-    for (i = 1; i <= rounds; i++) {
+    for (let i = 1; i <= rounds; i++) {
         let computerChoice = getComputerChoice();
         let humanChoice = getHumanChoice();
         playRound(computerChoice, humanChoice);
