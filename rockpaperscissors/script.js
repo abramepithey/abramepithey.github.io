@@ -64,3 +64,21 @@ function getHumanChoice(attempts = 3) {
     alert('Too many invalid responses, using random response');
     return getComputerChoice();
 }
+
+function playGame(rounds = 5) {
+    let humanScore = 0;
+    let computerScore = 0;
+
+    for (i = 1; i <= rounds; i++) {
+        let computerChoice = getComputerChoice();
+        let humanChoice = getHumanChoice();
+        playRound(computerChoice, humanChoice);
+    }
+
+    if (humanScore === computerScore)
+        alert('Tie game');
+    else if (humanScore > computerScore)
+        alert('You win, good game!');
+    else
+        alert('You lose, better luck next time...');
+}
