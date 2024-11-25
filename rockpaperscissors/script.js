@@ -97,3 +97,5 @@ function playGame(rounds = 5) {
     else
         alert('You lose, better luck next time...');
 }
+
+playGame();
