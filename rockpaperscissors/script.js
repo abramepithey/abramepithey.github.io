@@ -52,9 +52,9 @@ function getComputerChoice() {
         return 'Scissors';
 }
 
-function getHumanChoice(attempts = 3) {
+function getHumanChoice(round, attempts = 3) {
     for (let i = 1; i <= attempts; i++) {
-        let response = prompt('Select "Rock", "Paper", or "Scissors"').toLowerCase();
+        let response = prompt(`Round ${round}, Select "Rock", "Paper", or "Scissors"`).toLowerCase();
         if (response === 'rock' || response === 'paper' || response === 'scissors')
             return (response[0].toUpperCase() + response.substring(1));
         else
@@ -86,7 +86,7 @@ function playGame(rounds = 5) {
 
     for (let i = 1; i <= rounds; i++) {
         let computerChoice = getComputerChoice();
-        let humanChoice = getHumanChoice();
+        let humanChoice = getHumanChoice(i);
         playRound(computerChoice, humanChoice);
     }
 
