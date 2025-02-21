@@ -65,7 +65,7 @@ function getHumanChoice(round, attempts = 3) {
     return getComputerChoice();
 }
 
-function playGame(rounds = 5) {
+function playGame(scoreToWin = 5) {
     let humanScore = 0;
     let computerScore = 0;
     
@@ -84,9 +84,9 @@ function playGame(rounds = 5) {
         }
     }
 
-    for (let i = 1; i <= rounds; i++) {
+    while (humanScore < scoreToWin && computerScore < scoreToWin) {
         let computerChoice = getComputerChoice();
-        let humanChoice = getHumanChoice(i);
+        let humanChoice = getHumanChoice(humanScore + computerScore);
         playRound(computerChoice, humanChoice);
     }
 
