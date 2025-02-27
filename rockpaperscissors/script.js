@@ -81,15 +81,15 @@ function getHumanChoice(round, attempts = 3) {
     
     function playRound(computerChoice, humanChoice) {
         if (computerChoice === humanChoice)
-            alert(`Tie, ${computerChoice} and ${humanChoice}`);
+        responseText.innerHTML = `Tie, go again!`
         else if (computerChoice == 'Rock' && humanChoice == 'Scissors' ||
                 computerChoice == 'Paper' && humanChoice == 'Rock' ||
                 computerChoice == 'Scissors' && humanChoice == 'Paper') {
-            alert(`You lose, ${computerChoice} beats ${humanChoice}`);
+        responseText.innerHTML = `The computer gets a point, ${humanChoice} beats ${computerChoice}`
             computerScore++;
         }
         else {
-            alert(`You win, ${humanChoice} beats ${computerChoice}`);
+        responseText.innerHTML = `You get a point, ${humanChoice} beats ${computerChoice}`;
             humanScore++;
         }
 
