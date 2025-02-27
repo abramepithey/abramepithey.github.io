@@ -101,13 +101,3 @@ function getHumanChoice(round, attempts = 3) {
     else if (computerScore === 5)
         setTimeout(function () { alert('You lose, better luck next time...') }, 1);
 }
-
-    if (humanScore === computerScore)
-        alert(`Tie game, ${humanScore} to ${computerScore}`);
-    else if (humanScore > computerScore)
-        alert(`You win, ${humanScore} to ${computerScore}, good game!`);
-    else
-        alert(`You lose, ${humanScore} to ${computerScore}, better luck next time...`);
-}
-
-playGame();
