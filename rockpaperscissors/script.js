@@ -78,10 +78,6 @@ function getHumanChoice(round, attempts = 3) {
     alert('Too many invalid responses, using random response');
     return getComputerChoice();
 }
-
-function playGame(scoreToWin = 5) {
-    let humanScore = 0;
-    let computerScore = 0;
     
     function playRound(computerChoice, humanChoice) {
         if (computerChoice === humanChoice)
@@ -96,13 +92,15 @@ function playGame(scoreToWin = 5) {
             alert(`You win, ${humanChoice} beats ${computerChoice}`);
             humanScore++;
         }
-    }
 
-    while (humanScore < scoreToWin && computerScore < scoreToWin) {
-        let computerChoice = getComputerChoice();
-        let humanChoice = getHumanChoice(humanScore + computerScore);
-        playRound(computerChoice, humanChoice);
-    }
+    humanScoreCounter.textContent = 'Your Score: ' + String(humanScore);
+    computerScoreCounter.textContent = 'Computer Score: ' + String(computerScore);
+
+    if (humanScore === 5)
+        setTimeout(function () { alert('You win, good game!') }, 1);
+    else if (computerScore === 5)
+        setTimeout(function () { alert('You lose, better luck next time...') }, 1);
+}
 
     if (humanScore === computerScore)
         alert(`Tie game, ${humanScore} to ${computerScore}`);
