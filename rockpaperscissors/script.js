@@ -47,6 +47,15 @@ let computerScore = 0;
 const computerScoreCounter = document.querySelector('.computerScore');
 const responseText = document.querySelector('.responseText');
 
+let rockButton = document.querySelector('#rock');
+rockButton.addEventListener('click', () => playRound(getComputerChoice(), 'Rock'));
+
+let paperButton = document.querySelector('#paper');
+paperButton.addEventListener('click', () => playRound(getComputerChoice(), 'Paper'));
+
+let scissorsButton = document.querySelector('#scissors');
+scissorsButton.addEventListener('click', () => playRound(getComputerChoice(), 'Scissors'));
+
 function getComputerChoice() {
     let rand = Math.random();
     if (rand < 1/3)
