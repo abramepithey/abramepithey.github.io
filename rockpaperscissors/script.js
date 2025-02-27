@@ -41,6 +41,11 @@ function playGame takes integer number of rounds, default 5
         alert 'You lose...'
 
 */
+let humanScore = 0;
+const humanScoreCounter = document.querySelector('.playerScore');
+let computerScore = 0;
+const computerScoreCounter = document.querySelector('.computerScore');
+const responseText = document.querySelector('.responseText');
 
 function getComputerChoice() {
     let rand = Math.random();
